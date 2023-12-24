@@ -73,4 +73,23 @@ Welcome to the Git Commands Cheat Sheet!🌌
      git stash save "Trying out a new idea"
      ```
 
+### 6. **`git diff`**
+   - **Usage:** Displays the differences not added to the index. Also views the changes you have in your workspace relative to the named commit.
+   - **When to use:** When you want to look at current changes in your working copy, past changes in commits, or even to compare branches.
+   - **Parameters:**
+     - `commit or branch`: Specifies what to compare
+   - **Example:**
+     ```bash
+     diff --git a/diff_test.txt b/diff_test.txt
+     ```
+
+### 7. **`git revert`**
+   - **Usage:** Reverse commit specified by commit and commit the result.
+   - **When to use:** When you want to apply the inverse of a commit from your project history.
+   - **Parameters:**
+     - `commit`: Specifies the commit to be reversed
+   - **Example:**
+     ```bash
+     git revert HEAD
+     ```
 
